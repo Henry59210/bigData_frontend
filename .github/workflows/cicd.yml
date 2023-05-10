@@ -29,7 +29,7 @@ jobs:
           REMOTE_USER: ${{ secrets.DEPLOY_USERNAME }}
           SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
           SOURCE: 'dist'
-          TARGET: ~/dockerfiles/frontend/dist/
+          TARGET: ~/dockerfiles/frontend/dist
 
       - name: SSH into server and start frontend container
         uses: appleboy/ssh-action@master
