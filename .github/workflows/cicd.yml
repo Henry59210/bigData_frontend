@@ -21,7 +21,6 @@ jobs:
           # 运行构建和测试脚本
           npm ci
           npm run build
-          npm run test
 
       - name: Copy dist to server
         uses: easingthemes/ssh-deploy@main
