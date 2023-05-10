@@ -39,4 +39,6 @@ jobs:
           key: ${{ secrets.SSH_PRIVATE_KEY }}
           script: |
             cd ~/dockerfiles
+            sudo docker-compose stop frontend || true
+            sudo docker-compose built frontend
             sudo docker-compose up -d frontend
