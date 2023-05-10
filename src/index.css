@@ -1,0 +1,118 @@
+* { margin: 0; 
+    padding: 0; 
+    background-color: rgb(240, 242, 245);
+}
+.container {
+    position: absolute;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    border: 1px solid black;
+    box-sizing: border-box;
+}
+.user_id_list {
+    flex: 2;
+    box-sizing: border-box;
+    border: 1px solid black;
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+}
+.user_id_list__title {
+    flex: 1;
+    width: 100%;
+    background-color: grey;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.steamid_font {
+    margin-left: 20px; 
+    color:white; 
+    background-color: grey;
+    font-weight: bold;
+}
+.user_id_list__content {
+    flex: 13;
+    width: 100%;
+    overflow: scroll;
+}
+.userid_item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+    line-height: 60px;
+    border: 1px solid #DCDFE6;
+    border-radius: 5px;
+    margin: 10px;
+    box-shadow:  0 1px 2px 0 rgb(0 0 0 / 3%),
+    0 1px 6px -1px rgb(0 0 0 / 2%),
+    0 2px 4px 0 rgb(0 0 0 / 2%);;
+}
+.userid_item__id {
+    margin: 10px 20px;
+}
+.userid_item__btn {
+    margin: 10px 20px;
+    background-color: #ddeefe;
+    width: 60px;
+    height: 25px;
+    color: #3499fd;
+    cursor: pointer;
+    text-align: center;
+    line-height: 25px;
+    border-radius: 5px;
+}
+.userid_item__btn:active {
+    background-color: #a4d3ff
+}
+.userresult_item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 300px;
+    border: 1px solid #DCDFE6;
+    border-radius: 5px;
+    margin: 10px;
+    box-shadow:  0 1px 2px 0 rgb(0 0 0 / 3%),
+    0 1px 6px -1px rgb(0 0 0 / 2%),
+    0 2px 4px 0 rgb(0 0 0 / 2%);;
+}
+.userresult_item__id {
+    margin: 10px 20px;
+}
+.userresult_item__img {
+    margin: 10px 20px;
+    width: 280px;
+    height: 280px;
+}
+.userresult_item__rank {
+    margin: 10px 20px;
+    font-size: 20px;
+    font-weight: bold;
+}
+.recommendation_list {
+    flex: 3;
+    box-sizing: border-box;
+    border: 1px solid black;
+    margin: 20px 20px 20px 0;
+}
+.refresh_btn {
+    margin-right: 20px;
+    background-color: #409EFF;
+    color: white;
+    width: 80px;
+    height: 35px;
+    text-align: center;
+    line-height: 35px;
+    cursor: pointer;
+    border-radius: 7px;
+}
+.refresh_btn:active {
+    color: aliceblue;
+    background: green
+}
