@@ -28,7 +28,7 @@ jobs:
           REMOTE_HOST: ${{ secrets.DEPLOY_HOST }}
           REMOTE_USER: ${{ secrets.DEPLOY_USERNAME }}
           SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
-          SOURCE: dist
+          SOURCE: ./dist
           TARGET: ~/dockerfiles/frontend/dist
 
       - name: SSH into server and start frontend container
