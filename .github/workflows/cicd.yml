@@ -38,5 +38,5 @@ jobs:
           username: ${{ secrets.DEPLOY_USERNAME }}
           key: ${{ secrets.SSH_PRIVATE_KEY }}
           script: |
-            cd /dockerfiles
+            cd ~/dockerfiles
             sudo docker-compose up -d frontend
